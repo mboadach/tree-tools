@@ -1,1 +1,0 @@
-property pTitle : "Fully unfold the whole document"tell application "FoldingText"	set lstDocs to documents	if lstDocs ≠ {} then tell item 1 of lstDocs to HTTP request method "PUT" URI "/view/collapsed.json" body "[]"end tell
